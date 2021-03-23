@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/music.js"></script>
+    <title>豆瓣音乐</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 导航 -->
+        <div class="mnav">
+            <ul class="top">
+                <li><a href="./index.html">豆瓣</a></li>
+                <li><a href="javascript:;">读书</a></li>
+                <li><a href="javascript:;">电影</a></li>
+                <li><a href="./music.html">音乐</a></li>
+                <li><a href="javascript:;">同城</a></li>
+                <li><a href="javascript:;">F M</a></li>
+                <li><a href="javascript:;">阅读</a></li>
+                <li><a href="javascript:;">更多</a></li>
+            </ul>
+            <div class="right">
+                <span>
+                    <a href="javascript:;">下载豆瓣客户端</a>
+                    <img src="./images/main/douban.png" alt="">
+                </span>
+                <span><a href="javascript:;">豆邮</a></span>
+                <span><a href="javascript:;">提醒</a></span>
+                <span class="mypage">
+                    <a href="javascript:;">我的账号</a>
+                    <ul class="myPage">
+                        <li><a href="./user.html">个人主页</a></li>
+                        <li><a href="javascript:;">我的订单</a></li>
+                        <li><a href="javascript:;">我的钱包</a></li>
+                        <li><a href="javascript:;">账号管理</a></li>
+                        <li><a href="javascript:;">退出</a></li>
+                    </ul>
+                </span>
+                <script>
+                    $(".mypage").mousemove(function () {
+                        $(this).children("ul").css("display", "block");
+                    });
+                    $(".mypage ul").mouseleave(function () {
+                        $(this).css("display", "none")
+                    })
+                </script>
+            </div>
+        </div>
+        <!-- 导航结束 -->
+        <!-- 搜索栏 -->
+        <div class="search">
+            <a href="./music.html" class="logo">
+                <img src="./images/music/music.png" alt="豆瓣音乐">
+            </a>
+            <input type="text" placeholder="唱片名、表演者、条码、ISRC...">
+            <ul>
+                <li>
+                    <a href="javascript:;">音乐人</a>
+                </li>
+                <li>
+                    <a href="javascript:;">金羊毛计划</a>
+                </li>
+                <li>
+                    <a href="javascript:;">专题</a>
+                </li>
+                <li>
+                    <a href="javascript:;">排行榜</a>
+                </li>
+                <li>
+                    <a href="javascript:;">分类浏览</a>
+                </li>
+                <li>
+                    <a href="javascript:;">乐评</a>
+                </li>
+                <li>
+                    <a href="javascript:;">豆瓣FM</a>
+                </li>
+                <li>
+                    <a href="javascript:;">歌单</a>
+                </li>
+                <li>
+                    <a href="javascript:;">阿鹿比2020</a>
+                </li>
+            </ul>
+            <img src="./images/music/music2016.png" alt="" class="imgs">
+        </div>
+        <!-- 搜索栏结束 -->
+    </header>
+    <!-- 头部结束 -->
+    <!-- 主体 -->
+    <main>
+        <div class="content">
+            <div class="left">
+                <!-- 轮播图 -->
+                <div class="focus">
+                    <img src="./images/music/img1.jpg" alt="" class="show">
+                    <img src="./images/music/img2.jpg" alt="">
+                    <img src="./images/music/img3.jpg" alt="">
+                    <img src="./images/music/img4.jpg" alt="">
+                    <img src="./images/music/img5.jpg" alt="">
+                    <img src="./images/music/img6.jpg" alt="">
+                    <ol>
+                        <li class="cur"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <!-- 轮播图结束 -->
+                <!-- 音乐人 -->
+                <div class="musical">
+                    <span class="fash show1">本周流行音乐人</span>|
+                    <span class="quik">上升最快音乐人</span>
+                    <hr>
+                    <div class="fash1">
+                        <ul>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <span>
+                                    <a href="javascript:;">放肆的肆</a>
+                                    <em>流行 Pop</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/2.png" alt="">
+                                <span>
+                                    <a href="javascript:;">艾莎</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/3.png" alt="">
+                                <span>
+                                    <a href="javascript:;">薛之谦</a>
+                                    <em>世界音乐 World</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <span>
+                                    <a href="javascript:;">梁晓雪</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <div style="clear: both;"></div>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <span>
+                                    <a href="javascript:;">贰佰</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/6.png" alt="">
+                                <span>
+                                    <a href="javascript:;">宋冬野</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <span>
+                                    <a href="javascript:;">Mirrors解离的真实</a>
+                                    <em>摇滚 Rock</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <span>
+                                    <a href="javascript:;">左小祖咒</a>
+                                    <em>摇滚 Rock</em>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fash1">
+                        <ul>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <span>
+                                    <a href="javascript:;">左小祖咒</a>
+                                    <em>摇滚 Rock</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <span>
+                                    <a href="javascript:;">Mirrors解离的真实</a>
+                                    <em>摇滚 Rock</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <span>
+                                    <a href="javascript:;">梁晓雪</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <span>
+                                    <a href="javascript:;">放肆的肆</a>
+                                    <em>流行 Pop</em>
+                                </span>
+                            </li>
+                            <div style="clear: both;"></div>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <span>
+                                    <a href="javascript:;">艾莎沙</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/3.png" alt="">
+                                <span>
+                                    <a href="javascript:;">薛之谦</a>
+                                    <em>世界音乐 World</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/6.png" alt="">
+                                <span>
+                                    <a href="javascript:;">宋冬野</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <span>
+                                    <a href="javascript:;">贰佰</a>
+                                    <em>民谣 Folk</em>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 音乐人结束 -->
+                <!-- 推荐 -->
+                <div class="send">
+                    <span class="sent">编辑推荐</span>
+                    <button class="btn1 active">-</button>
+                    <button class="btn2">+</button>
+                    <hr>
+                    <div class="sent2">
+                        <ul>
+                            <li>
+                                <img src="./images/music/sen1.png" alt="">
+                                <span>
+                                    <em>【歌曲】</em>
+                                    <a href="javascript:;">解离的真实</a>
+                                    <em>tathtimi</em>
+                                    <p>采样拼贴，好听的小情绪，雾霾散去的时候，可以听一个。</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/sen2.png" alt="">
+                                <span>
+                                    <em>【歌曲】</em>
+                                    <a href="javascript:;">止语</a>
+                                    <em>tathtimi</em>
+                                    <p>采样拼贴，好听的小情绪，雾霾散去的时候，可以听一个。</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/sen3.png" alt="">
+                                <span>
+                                    <em>【歌曲】</em>
+                                    <a href="javascript:;">解离的真实</a>
+                                    <em>tathtimi</em>
+                                    <p>采样拼贴，好听的小情绪，雾霾散去的时候，可以听一个。</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sent2">
+                        <ul>
+                            <li>
+                                <img src="./images/music/sen4.png" alt="">
+                                <span>
+                                    <em>【歌曲】</em>
+                                    <a href="javascript:;">解离的真实</a>
+                                    <em>tathtimi</em>
+                                    <p>采样拼贴，好听的小情绪，雾霾散去的时候，可以听一个。</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/sen5.png" alt="">
+                                <span>
+                                    <em>【歌曲】</em>
+                                    <a href="javascript:;">止语</a>
+                                    <em>tathtimi</em>
+                                    <p>采样拼贴，好听的小情绪，雾霾散去的时候，可以听一个。</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./images/music/sen6.png" alt="">
+                                <span>
+                                    <em>【歌曲】</em>
+                                    <a href="javascript:;">解离的真实</a>
+                                    <em>tathtimi</em>
+                                    <p>采样拼贴，好听的小情绪，雾霾散去的时候，可以听一个。</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 推荐结束 -->
+            </div>
+            <div class="right">
+                <!-- 加入 -->
+                <div class="add">
+                    <img src="./images/music/ad.jpg" alt="">
+                    <div class="add-lis">
+                        <ul>
+                            <li>
+                                <strong>40385</strong>
+                                <span>音乐人</span>
+                            </li>
+                            <li>
+                                <strong>2474</strong>
+                                <span>播客</span>
+                            </li>
+                            <li>
+                                <strong>944</strong>
+                                <span>厂牌</span>
+                            </li>
+                        </ul>
+                        <div class="join">加入</div>
+                    </div>
+                </div>
+                <!-- 加入结束 -->
+                <!-- 排行榜 -->
+                <div class="rank">
+                    <strong>本周单曲榜</strong>
+                    <div class="btn3">播放全部</div>
+                    <hr>
+                    <ul>
+                        <li class="show3">
+                            <a href="javascript:;">最热</a>|
+                        </li>
+                        <li>
+                            <a href="javascript:;">摇滚</a>|
+                        </li>
+                        <li>
+                            <a href="javascript:;">民谣</a>|
+                        </li>
+                        <li>
+                            <a href="javascript:;">流行</a>
+                        </li>
+                    </ul>
+                    <div style="clear: both;"></div>
+                    <div class="hot-lis">
+                        <ul class="current">
+                            <li>
+                                <img src="./images/music/6.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>1</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>2</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <em>不想回家</em>
+                                <span>放肆的肆 / 7474次播放</span>
+                                <h1>3</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/2.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>4</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/3.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>5</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>6</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>7</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>8</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>9</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>10</h1>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="./images/music/2.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>1</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>2</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/6.png" alt="">
+                                <em>不想回家</em>
+                                <span>放肆的肆 / 7474次播放</span>
+                                <h1>3</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>4</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/3.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>5</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>6</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>7</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>8</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>9</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>10</h1>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="./images/music/3.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>1</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>2</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <em>不想回家</em>
+                                <span>放肆的肆 / 7474次播放</span>
+                                <h1>3</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>4</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>5</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>6</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/6.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>7</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>8</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>9</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>10</h1>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>1</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>2</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/6.png" alt="">
+                                <em>不想回家</em>
+                                <span>放肆的肆 / 7474次播放</span>
+                                <h1>3</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>4</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/3.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>5</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/1.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>6</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/5.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>7</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/7.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>8</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/8.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>9</h1>
+                            </li>
+                            <li>
+                                <img src="./images/music/4.png" alt="">
+                                <em>2016—1 gyc demo</em>
+                                <span>宋冬野 / 4008次播放</span>
+                                <h1>10</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 排行榜结束-->
+            </div>
+        </div>
+    </main>
+    <!-- 主体结束 -->
+    <div style="clear: both;"></div>
+    <!-- 尾部 -->
+    <footer>
+        © 2005－2017 douban.com, all rights reserved 北京豆网科技有限公司
+        <ul>
+            <li><a href="javascript:;">关于豆瓣·</a></li>
+            <li><a href="javascript:;">豆瓣广告·</a></li>
+            <li><a href="javascript:;">联系我们·</a></li>
+            <li><a href="javascript:;">关于豆瓣·</a></li>
+            <li><a href="javascript:;">帮助中心·</a></li>
+            <li><a href="javascript:;">免责声明·</a></li>
+        </ul>
+    </footer>
+    <!-- 尾部结束 -->
+</body>
+
+</html>

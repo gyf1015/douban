@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+    <title>豆瓣首页</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 导航 -->
+        <div class="mnav">
+            <ul class="top">
+                <li><a href="./index.html">豆瓣</a></li>
+                <li><a href="javascript:;">读书</a></li>
+                <li><a href="javascript:;">电影</a></li>
+                <li><a href="./music.html">音乐</a></li>
+                <li><a href="javascript:;">同城</a></li>
+                <li><a href="javascript:;">F M</a></li>
+                <li><a href="javascript:;">阅读</a></li>
+                <li><a href="javascript:;">更多</a></li>
+            </ul>
+            <div class="right">
+                <span>
+                    <a href="javascript:;">下载豆瓣客户端</a>
+                    <img src="./images/main/douban.png" alt="">
+                </span>
+                <span><a href="javascript:;">豆邮</a></span>
+                <span><a href="javascript:;">提醒</a></span>
+                <span class="mypage">
+                    <a href="javascript:;">我的账号</a>
+                    <ul class="myPage">
+                        <li><a href="./user.html">个人主页</a></li>
+                        <li><a href="javascript:;">我的订单</a></li>
+                        <li><a href="javascript:;">我的钱包</a></li>
+                        <li><a href="javascript:;">账号管理</a></li>
+                        <li><a href="javascript:;">退出</a></li>
+                    </ul>
+                </span>
+                <script>
+                    $(".mypage").mousemove(function () {
+                        $(this).children("ul").css("display", "block");
+                    });
+                    $(".mypage ul").mouseleave(function () {
+                        $(this).css("display", "none")
+                    })
+                </script>
+            </div>
+        </div>
+        <!-- 导航结束 -->
+        <!-- 搜索栏 -->
+        <div class="search">
+            <a href="./index.html" class="logo">
+                <img src="./images/main/douban.jpg" alt="豆瓣">
+            </a>
+            <ul>
+                <li>
+                    <a href="./index.html">首页</a>
+                </li>
+                <li>
+                    <a href="./user.html">我的豆瓣</a>
+                </li>
+                <li>
+                    <a href="./music.html">豆瓣音乐</a>
+                </li>
+                <li>
+                    <a href="./index.html">线上活动</a>
+                </li>
+                <li>
+                    <a href="./index.html">移动应用</a>
+                </li>
+                <li>
+                    <a href="./index.html">游戏</a>
+                </li>
+            </ul>
+            <input type="text" placeholder="搜索你感兴趣的内容和人...">
+        </div>
+        <!-- 搜索栏结束 -->
+    </header>
+    <!-- 头部结束 -->
+    <!-- 内容 -->
+    <main>
+        <div class="box">
+            <div class="left">
+                <!-- 发表 -->
+                <div class="type">
+                    <ul>
+                        <li>
+                            <img src="./images/main/1.png" alt="">
+                            <a href="javascript:;">说句话</a>
+                        </li>
+                        <li>
+                            <img src="./images/main/2.png" alt="">
+                            <a href="javascript:;">发照片</a>
+                        </li>
+                        <li>
+                            <img src="./images/main/3.png" alt="">
+                            <a href="javascript:;">推荐网页</a>
+                        </li>
+                        <li>
+                            <img src="./images/main/4.png" alt="">
+                            <a href="javascript:;">写日记</a>
+                        </li>
+                        <li>
+                            <img src="./images/main/5.png" alt="">
+                            <a href="javascript:;">写点东西</a>
+                        </li>
+                    </ul>
+                    <span>
+                        <img src="./images/main/8.png" alt="">首页设置
+                    </span>
+                    <input type="text" placeholder="分享生活点滴...">
+                </div>
+                <!-- 发表结束 -->
+                <!-- 文章 -->
+                <ul class="article">
+                    <li>
+                        <img src="./images/main/head1.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo1.jpg" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head2.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo2.png" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head3.jpg" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo3.jpg" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head2.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo2.png" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head1.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo1.jpg" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head1.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo1.jpg" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head1.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo1.jpg" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/main/head1.png" alt="">
+                        <div class="con">
+                            <span>
+                                <strong>Doreen</strong>的评论
+                            </span>
+                            <div class="text">
+                                <h3><a href="javascript:;">长文慎入 | 生而为人，注定要受自由之苦</a></h3>
+                                <p>
+                                    <img src="./images/main/photo1.jpg" alt="">
+                                    这部电影有一个直白的标题，不是《她与他》，不是《傲慢与偏见》，不是《志明与春娇》，是《男与女》。男与女，剥离了一切社会意涵和主体性，赤裸如亚当和夏娃，一叶蔽体地入画，被毒蛇引诱吃下禁果...
+                                </p>
+                            </div>
+                            <span>19分钟，来自 热门精选</span>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 文章结束 -->
+            </div>
+            <div class="right">
+                <div class="rig-top">
+                    <h3>豆瓣正在发生.....</h3>
+                    <p><a href="javascript:;">瓣我同行·我的豆瓣2016观影报告</a></p>
+                    <p><a href="javascript:;">豆瓣2016年度读书榜单揭晓</a></p>
+                </div>
+                <div class="ad">
+                    <img src="./images/main/ad.jpg" alt="">
+                </div>
+                <!-- 热门话题 -->
+                <div class="hot">
+                    <h3>热门话题</h3>
+                    <a href="javascript:;" class="more">更多</a>
+                    <dl>
+                        <dt><a href="javascript:;">2017新年计划</a></dt>
+                        <dd>愿明年今日它也是你的年终总结<em>3168条内容</em></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">2017新年计划</a></dt>
+                        <dd>愿明年今日它也是你的年终总结<em>3168条内容</em></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">2017新年计划</a></dt>
+                        <dd>愿明年今日它也是你的年终总结<em>3168条内容</em></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">2017新年计划</a></dt>
+                        <dd>愿明年今日它也是你的年终总结<em>3168条内容</em></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">2017新年计划</a></dt>
+                        <dd>愿明年今日它也是你的年终总结<em>3168条内容</em></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:;">2017新年计划</a></dt>
+                        <dd>愿明年今日它也是你的年终总结<em>3168条内容</em></dd>
+                    </dl>
+                </div>
+                <!-- 热门话题结束 -->
+                <div style="clear:both"></div>
+                <!-- 关注 -->
+                <div class="focus">
+                    <h3>我的关注</h3>
+                    <a href="javascript:;" class="more">更多</a>
+                    <p><a href="javascript:;">> 被1人关注</a></p>
+                    <p><a href="javascript:;">> 申请创建小站</a></p>
+                </div>
+                <!-- 关注结束 -->
+                <!-- 图片 -->
+                <div class="rig-img">
+                    <img src="./images/main/sao.png" alt="">
+                </div>
+                <!-- 图片结束 -->
+                <!-- 活动 -->
+                <div class="activity">
+                    <h3>热门活动</h3>
+                    <a href="javascript:;" class="more">成员0 小站0</a>
+                    <p>
+                        <a href="Javascript:;">来一句王家卫式的话</a>
+                    </p>
+                    <p>
+                        <span>时间：2月25日 - 5月24日</span>
+                    </p>
+                    <p>
+                        <span>参加：1693人参加</span>
+                    </p>
+                    <p>
+                        <a href="Javascript:;">> 更多线上活动</a>
+                    </p>
+                    <img src="./images/main/ad1.jpg" alt="">
+                </div>
+                <!-- 活动结束 -->
+            </div>
+        </div>
+    </main>
+    <!-- 内容结束 -->
+    <div style="clear: both;"></div>
+    <div class="page">
+        <span>
+            <a href="javascript:;">
+                < 前页 </a>
+        </span>
+        <ul>
+            <li class="cur"><a href="javascript:;">1</a></li>
+            <li><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li><a href="javascript:;">6</a></li>
+            <li><a href="javascript:;">...</a></li>
+        </ul>
+        <span>
+            <a href="javascript:;">后页 ></a>
+        </span>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+        © 2005－2017 douban.com, all rights reserved 北京豆网科技有限公司
+        <ul>
+            <li><a href="javascript:;">关于豆瓣·</a></li>
+            <li><a href="javascript:;">豆瓣广告·</a></li>
+            <li><a href="javascript:;">联系我们·</a></li>
+            <li><a href="javascript:;">关于豆瓣·</a></li>
+            <li><a href="javascript:;">帮助中心·</a></li>
+            <li><a href="javascript:;">免责声明·</a></li>
+        </ul>
+    </footer>
+    <!-- 尾部结束 -->
+</body>
+
+</html>
